@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-base text-text-primary antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent-blue hover:bg-accent-blue-hover text-white px-4 py-2 rounded-md font-semibold transition-colors duration-200 text-sm;
+  }
+  .btn-add-green {
+    @apply bg-accent-green hover:bg-[#16A34A] text-white px-4 py-2 rounded-md font-semibold transition-colors duration-200 text-sm;
+  }
+  .btn-add-red {
+    @apply bg-accent-red hover:bg-[#DC2626] text-white px-4 py-2 rounded-md font-semibold transition-colors duration-200 text-sm;
+  }
+  .btn-edit {
+    @apply bg-accent-yellow hover:bg-accent-yellow-hover text-[#0F1117] px-3 py-1.5 rounded-md font-semibold transition-colors duration-200 text-xs;
+  }
+  .btn-update {
+    @apply bg-accent-teal hover:bg-[#0D9488] text-white px-3 py-1.5 rounded-md font-semibold transition-colors duration-200 text-xs;
+  }
+  .btn-delete {
+    @apply bg-accent-red hover:bg-[#DC2626] text-white px-4 py-2 rounded-md font-semibold transition-colors duration-200 text-sm flex items-center gap-2;
+  }
+  .btn-download {
+    @apply bg-accent-blue hover:bg-accent-blue-hover text-white px-4 py-2 rounded-md font-semibold transition-colors duration-200 text-sm flex items-center gap-2;
+  }
+  .input-field {
+    @apply bg-input border border-border text-text-primary placeholder:text-text-muted rounded-lg px-3.5 py-2.5 focus:border-accent-blue focus:outline-none transition-colors duration-200 text-sm w-full;
+  }
+  .card-container {
+    @apply bg-card rounded-xl shadow-[0_2px_12px_rgba(0,0,0,0.4)] p-4 sm:p-6;
+  }
+}
